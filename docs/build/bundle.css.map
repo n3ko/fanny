@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "file": "bundle.css",
+  "sources": [
+    "../../App.svelte"
+  ],
+  "sourcesContent": [
+    "<script>\n\tlet x = new Array(20).fill(new Array(20).fill({id: 1, name: 1}))\n</script>\n<style>\n#r {\nbackground-image: url(\"/r1.jpeg\");\nbackground-repeat: no-repeat;\npadding-left:0;\npadding-top: 0;\nbackground-size: 1315px 1317px;\n}\n.t {\nborder-collapse: collapse;\n}\n\ntd {\nfont-family: times,serif;\nfont-size: 18pt;\nheight: 60.4px;\ntext-align: center;\nvertical-align: middle;\nwidth: 63px !important;\npadding: 0;\nborder: 3px solid #ccc;\n}\ntd input {\nfont-size: 40pt;\nbackground-color:rgba(0,0,0,0) !important;\nborder: 0 solid #fff;\nmargin: 0;\npadding: 0;\noutline: medium none;\ntext-align: center;\nwidth: 63.5px;\n}\n</style>\n<div id=r> \n<table cellspacing=\"0\" cellpadding=\"0\" class=\"t\"> \n<tbody>\n\n{#each x as cats, i}\n\t<tr>\n\t{#each cats as { id, name }, i}\n\t   <td><input maxlength=1 size=2></td>\n\t{/each}\n\t</tr>\n{/each}\n\t</tbody></table></div>\n"
+  ],
+  "names": [],
+  "mappings": "AAIA,EAAE,8BAAC,CAAC,AACJ,gBAAgB,CAAE,IAAI,UAAU,CAAC,CACjC,iBAAiB,CAAE,SAAS,CAC5B,aAAa,CAAC,CACd,WAAW,CAAE,CAAC,CACd,eAAe,CAAE,MAAM,CAAC,MAAM,AAC9B,CAAC,AACD,EAAE,8BAAC,CAAC,AACJ,eAAe,CAAE,QAAQ,AACzB,CAAC,AAED,EAAE,8BAAC,CAAC,AACJ,WAAW,CAAE,KAAK,CAAC,KAAK,CACxB,SAAS,CAAE,IAAI,CACf,MAAM,CAAE,MAAM,CACd,UAAU,CAAE,MAAM,CAClB,cAAc,CAAE,MAAM,CACtB,KAAK,CAAE,IAAI,CAAC,UAAU,CACtB,OAAO,CAAE,CAAC,CACV,MAAM,CAAE,GAAG,CAAC,KAAK,CAAC,IAAI,AACtB,CAAC,AACD,iBAAE,CAAC,KAAK,eAAC,CAAC,AACV,SAAS,CAAE,IAAI,CACf,iBAAiB,KAAK,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,UAAU,CACzC,MAAM,CAAE,CAAC,CAAC,KAAK,CAAC,IAAI,CACpB,MAAM,CAAE,CAAC,CACT,OAAO,CAAE,CAAC,CACV,OAAO,CAAE,MAAM,CAAC,IAAI,CACpB,UAAU,CAAE,MAAM,CAClB,KAAK,CAAE,MAAM,AACb,CAAC"
+}
