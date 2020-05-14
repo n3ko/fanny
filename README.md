@@ -1,2 +1,0 @@
-# fanny
-crosswords sandbox
